@@ -1,4 +1,17 @@
 body {
-  padding: 10px;
-  font-family: sans-serif;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  background-color: #f1f3f4;
+}
+
+header,
+main,
+footer {
+  flex: 0 1 auto;
+}
+
+/* Force Footer to Bottom of Page */
+main {
+  flex-grow: 1;
 }
