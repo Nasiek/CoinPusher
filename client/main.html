@@ -3,24 +3,41 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-  {{> hello}}
-  {{> info}}
+  {{> navbar}}
+  <main class="valign-wrapper">
+    <div class="container">
+      <div class="center-align">
+        <h1>Welcome to CoinPusher!</h1>
+      </div>
+      {{> homepage}}
+    </div>
+  </main>
 </body>
+
+<template name="homepage">
+  <div class="center-align">
+    <a class="waves-effect waves-light btn-large">Get Started</a>
+  </div>
+</template>
 
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="navbar">
+  <header>
+    <nav>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+  </header>
+</template>
+
+<!-- <template name="info">
   <div class="section">
       <div class="container">
         <div class="card blue">
@@ -30,4 +47,4 @@
         </div>
       </div>
   </div>
-</template>
+</template> -->
