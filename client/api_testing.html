@@ -1,12 +1,30 @@
 <head>
+    <script src=""></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src='https://raw.githubusercontent.com/weiks/quarters-js/master/lib/Quarters.min.js'></script>
+
 </head>
 <body>
     <div id="api-container">
         {{> apitest }}
         </div>
-
+        <script
+        src="https://pocketfulofquarters.com/embeds/button.js"
+        data-script-name="quarters-embeds"
+        data-app-id="<APP-ID>"
+        data-app-key="<APP-KEY>"
+        charset="utf-8">
+    </script>
+    
+    <button
+        class="buy-quarters-button"
+        data-widget-type="button"
+        data-order-code="1"
+        data-amount="2">
+      Play with 2 Quarters
+    </button>
 </body>

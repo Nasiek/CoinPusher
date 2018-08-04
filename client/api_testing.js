@@ -5,6 +5,14 @@ import './api_testing.html';
 
 Template.apitesting.onCreated(function apitestingOnCreated() {
   // counter starts at 0
+  this.apiData = function quarterCall(){
+    var client = new Quarters({
+        appId: '3IX6wX8uTVHCCVlIv5VQ',
+        appKey: 'gk7uoois2hkswzzsy7kb3f8zdnxosmse',
+        quartersURL: 'https://pocketfulofquarters.com',
+        apiURL: 'https://api.pocketfulofquarters.com/v1/'
+      });
+  }
   this.counter = new ReactiveVar(0);
 });
 
